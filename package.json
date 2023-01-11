@@ -1,0 +1,18 @@
+{
+  "name": "dot.wasm",
+  "version": "0.1.0",
+  "description": "Dot product accelerated by WebAssembly",
+  "type": "module",
+  "main": "dst/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "tsc-watch": "tsc --watch"
+  },
+  "author": "Archit Bhonsle <abhonsle2000@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "core": "file:core/pkg",
+    "typescript": "^4.9.4"
+  }
+}
