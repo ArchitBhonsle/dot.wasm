@@ -5,3 +5,21 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+#demo {
+  display: grid;
+  grid-template-areas: "a b" "a b" "c c" "d d";
+}
+
+#vec-a {
+  grid-area: a;
+}
+#vec-b {
+  grid-area: b;
+}
+#result {
+  grid-area: c;
+}
+#error {
+  grid-area: d;
+}

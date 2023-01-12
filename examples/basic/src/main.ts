@@ -1,5 +1,6 @@
 import "./style.css";
-import dot from "dot.wasm";
+const { init, dot } = await import("dot.wasm");
+await init();
 
 const areaA = document.querySelector<HTMLTextAreaElement>("#vec-a")!;
 const areaB = document.querySelector<HTMLTextAreaElement>("#vec-b")!;
