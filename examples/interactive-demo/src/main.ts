@@ -4,8 +4,7 @@ await init();
 
 const areaA = document.querySelector<HTMLTextAreaElement>("#vec-a")!;
 const areaB = document.querySelector<HTMLTextAreaElement>("#vec-b")!;
-const resultSpan = document.querySelector<HTMLSpanElement>("#result")!;
-const errorSpan = document.querySelector<HTMLSpanElement>("#error")!;
+const output = document.querySelector<HTMLSpanElement>("#output")!;
 
 areaA.addEventListener("input", evaluate);
 areaB.addEventListener("input", evaluate);
@@ -24,13 +23,13 @@ function evaluate() {
 
   try {
     const result = dot(new Float64Array(vecA), new Float64Array(vecB));
-    resultSpan.innerText = result.toString();
-    errorSpan.innerText = "";
+    output.classList.remove("error");
+    output.innerText = `Result: ${result}`;
   } catch (err) {
     if (err instanceof Error) {
+      output.classList.add("error");
+      output.innerText = `Error: ${err.message}`;
       console.error(err);
-      resultSpan.innerText = "";
-      errorSpan.innerText = err.message;
     }
   }
 }

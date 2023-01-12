@@ -26,7 +26,7 @@ type ArrayLike = NormalArrayLike | BigIntArrayLike;
 function dot(a: ArrayLike, b: ArrayLike) {
   if (a.length != b.length)
     throw new Error(
-      `Both the vectors have different lengths (${a.length} != ${b.length})`
+      `The vectors have different lengths (${a.length} != ${b.length})`
     );
 
   const aClass = a.constructor.name,

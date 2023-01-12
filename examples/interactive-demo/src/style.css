@@ -1,0 +1,70 @@
+:root {
+  font-family: sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#demo {
+  display: grid;
+  max-width: 600px;
+  grid-template-areas:
+    "title title"
+    "inst inst"
+    "label-a label-b"
+    "vec-a vec-b"
+    "vec-a vec-b"
+    "output output";
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  grid-area: title;
+  text-align: center;
+}
+
+#instructions {
+  grid-area: inst;
+  font-style: italic;
+}
+
+.label {
+  font-weight: bold;
+}
+#label-a {
+  grid-area: label-a;
+}
+#label-b {
+  grid-area: label-b;
+}
+
+#vec-a {
+  grid-area: vec-a;
+}
+#vec-b {
+  grid-area: vec-b;
+}
+textarea {
+  font: inherit;
+  resize: vertical;
+}
+
+#output {
+  grid-area: output;
+  text-align: center;
+}
+.error {
+  color: red;
+}
