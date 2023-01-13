@@ -9,7 +9,7 @@ import init, {
   uint16,
   uint32,
   uint8,
-} from "core";
+} from "../core/pkg";
 
 interface NormalArrayLike {
   [index: number]: number;

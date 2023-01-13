@@ -1,18 +1,31 @@
 {
   "name": "dot.wasm",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Dot product accelerated by WebAssembly",
+  "author": "Archit Bhonsle <abhonsle2000@gmail.com>",
+  "license": "MIT",
   "type": "module",
-  "main": "dst/index.js",
+  "homepage": "https://architbhonsle.github.io/dot.wasm/",
+  "keywords": [
+    "linear-algebra",
+    "mathematics",
+    "dot-product"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArchitBhonsle/dot.wasm/"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
     "tsc-watch": "tsc --watch"
   },
-  "author": "Archit Bhonsle <abhonsle2000@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
-    "core": "file:core/pkg",
     "typescript": "^4.9.4"
-  }
+  },
+  "main": "dst/index.js",
+  "files": [
+    "dst/*",
+    "core/pkg/*"
+  ]
 }
