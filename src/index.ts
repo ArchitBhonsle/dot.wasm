@@ -42,7 +42,7 @@ function dot(a: ArrayLike, b: ArrayLike) {
     b = new Float64Array(b as NormalArrayLike);
   }
 
-  switch (aClass) {
+  switch (a.constructor.name) {
     case "Int8Array":
       return int8(a as Int8Array, b as Int8Array);
     case "Uint8Array":
@@ -64,7 +64,7 @@ function dot(a: ArrayLike, b: ArrayLike) {
     case "Float64Array":
       return float64(a as Float64Array, b as Float64Array);
     default:
-      throw new Error(`Type ${aClass} is not supported`);
+      throw new Error(`Type ${a.constructor.name} is not supported`);
   }
 }
 

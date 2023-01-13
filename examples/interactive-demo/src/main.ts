@@ -22,7 +22,7 @@ function evaluate() {
   const vecB = parseVecInput(areaB.value);
 
   try {
-    const result = dot(new Float64Array(vecA), new Float64Array(vecB));
+    const result = dot(vecA, vecB);
     output.classList.remove("error");
     output.innerText = `Result: ${result}`;
   } catch (err) {

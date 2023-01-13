@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "deploy": "tsc && vite build --target esnext",
-    "deploy-build": "tsc && vite build --target esnext --outDir=../../docs",
+    "deploy-build": "tsc && vite build --target esnext --outDir=../../docs --emptyOutDir",
     "preview": "vite preview"
   },
   "devDependencies": {

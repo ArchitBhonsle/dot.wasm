@@ -9,7 +9,7 @@ function dot(a, b) {
         a = new Float64Array(a);
         b = new Float64Array(b);
     }
-    switch (aClass) {
+    switch (a.constructor.name) {
         case "Int8Array":
             return int8(a, b);
         case "Uint8Array":
@@ -31,7 +31,7 @@ function dot(a, b) {
         case "Float64Array":
             return float64(a, b);
         default:
-            throw new Error(`Type ${aClass} is not supported`);
+            throw new Error(`Type ${a.constructor.name} is not supported`);
     }
 }
 export { dot, init };
