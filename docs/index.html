@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/dot.wasm/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dot.wasm</title>
+    <script type="module" crossorigin src="/dot.wasm/assets/index-a96e6a05.js"></script>
+    <link rel="stylesheet" href="/dot.wasm/assets/index-83628191.css">
+  </head>
+
+  <body>
+    
+    <div id="app">
+      <h1 id="title">Interactive Demo</h1>
+      <div id="demo">
+        <div id="instructions">
+          Enter vectors in comma seperated formatted format
+        </div>
+        <div class="label" id="label-a">Vector a</div>
+        <div class="label" id="label-b">Vector b</div>
+        <textarea id="vec-a">1, 2, 3, 4</textarea>
+        <textarea id="vec-b">5, 6, 7, 8</textarea>
+        <div id="output">Result: 70</div>
+      </div>
+      <div>
+        <h1>About</h1>
+        <div>
+          This is a demo that computes the dot product of two vectors using
+          WebAssembly.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

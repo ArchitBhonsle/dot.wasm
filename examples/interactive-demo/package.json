@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --target esnext",
+    "deploy": "tsc && vite build --target esnext",
+    "deploy-build": "tsc && vite build --target esnext --outDir=../../docs",
     "preview": "vite preview"
   },
   "devDependencies": {
